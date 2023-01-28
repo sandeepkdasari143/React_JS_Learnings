@@ -1,0 +1,97 @@
+->There are two types of dependencies:
+1. Dev Dependencies
+2. Dependencies
+
+	Example: "devDependencies": {"parcel": "^2.8.2", "process": "^0.11.10"},
+			  "dependencies": {"react": "^18.2.0", "react-dom": "^18.2.0"}
+
+->What is Browser List? 
+Ans: Helps us to Transform our code and make our code compatible for different types of Browsers.
+		Example:  "browserlist":["last 10 Chrome versions", "last 10 Firefox versions"]
+
+-> What is Polyfill?
+Ans: Some code which is the replacement for the newer version of the code.
+	Example: For suppose, Array.map() is not understood by the older versions of Browsers, then
+				Our code will be converted into the older version of javascript code.
+
+-> Who converts our modern code into the older versions understandable older version of js code?
+Ans: Babel, What is it? => just a javascript node package which is used to convert the modern js code into understandable oldern version of the js code. That is known as Polyfill.
+
+-> Writing the Scripts in the `package.json`.  {npx = npm run}
+Ans: "scripts": { "start": "parcel index.html", "build": "parcel build index.html", "test": "jest" },
+
+-> We can configure the project to `remove all of the console.logs()`: There is the package which helps us to remove the console logs: 
+Package name: "babel-plugin-transform-remove-console"  {Dev dependency}
+
+
+-> Code example:
+
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+const heading = React.createElement(
+"h1",
+{
+	id: "title",
+	key: "h1",
+},
+"Heading 1 for the parcel"
+);
+
+console.log(heading);
+
+Output:
+Object.
+
+-> `React.createElement` gives us an Object as an Output, and that Object is converted into HTML Code and puts it up on DOM.
+
+-> react.createElement => Object => HTML DOM  {this is ugly,}
+
+-> So, JSX is created.
+
+What are the major differences between HTML and JSX? {Assignment Question}
+
+-> Read Babel Documentation, Compiler for the next generation Javascript.=> {Understands the JSX}
+-> Babel reads your code and gives the Browser normal code.
+-> Babel creats Abstract Syntax Tree.
+-> Babel is the Compiler dude! It compiles the JSX and helps it to convert the Normal JavaScript.
+
+But! But! But!
+
+-> JSX uses the `React.createElement` behind the scenes.
+-> JSX ---Babel Compilation---> React.createElement Code => Object => HTML DOM. :)
+
+-> JSX helps to sanitizes the code first, and then protect the code from "Cross Site Scripting"(XSS) Attacks.  {How JSX can protect from XSS Attack?}
+
+-> FUNCTIONAL COMPONENT:
+Ans: The Function which return the JSX is known as Functional Component.
+-> Functional Component Representation => {Title()} or <Title />.
+-> Functional Component is also known as React Element, which is defined as a Normal Variable with JSX get assigned to it.
+
+-> CODE Example:
+
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+const Title = () => (
+	<h1 id="title" key="h2">Namaste React</h1>
+);
+
+const HeaderComponent = () => {
+	return (
+		{Title()}	//We can write any JavaScript inside the JSX. :)
+		<div>
+			<h2>Namaste React Functional Component</h2>
+			<h2>This is a h2 Tag</h2>
+		</div>
+	);
+};
+
+const root = ReactDOM.createRoot( document.getElementById("root"));
+
+//async defer
+root.render(<HeaderComponent />);
+
+
+-> JARGON DEMYSTIFIED:
+-> Component Composition => If we have to use the components inside the components which is in case of React, then it's called Component Composition, It's like passing a component into a component.
