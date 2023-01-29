@@ -1,4 +1,4 @@
-Assignment: You should know answers to the below questions.
+Assignment: You should answer these questions.
 
 What is Reconciliation?
 What is Virtual DOM?
@@ -33,3 +33,4 @@ What is DIF Algorithm?
 		-> Default Import is looks like => `import Header form './components/Header';`
 
 
+-> We can import everything as => `import * as Obj from './components/Header'; `
