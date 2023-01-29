@@ -45,7 +45,7 @@ Object.
 
 -> `React.createElement` gives us an Object as an Output, and that Object is converted into HTML Code and puts it up on DOM.
 
--> react.createElement => Object => HTML DOM  {this is ugly,}
+-> react.createElement => Object => Virtual DOM  {this is ugly,}
 
 -> So, JSX is created.
 
@@ -59,7 +59,7 @@ What are the major differences between HTML and JSX? {Assignment Question}
 But! But! But!
 
 -> JSX uses the `React.createElement` behind the scenes.
--> JSX ---Babel Compilation---> React.createElement Code => Object => HTML DOM. :)
+-> JSX ---Babel Compilation---> React.createElement Code => Object => Virtual DOM. :)
 
 -> JSX helps to sanitizes the code first, and then protect the code from "Cross Site Scripting"(XSS) Attacks.  {How JSX can protect from XSS Attack?}
 
