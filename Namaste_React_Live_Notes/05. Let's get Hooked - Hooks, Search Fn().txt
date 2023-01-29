@@ -1,0 +1,28 @@
+Assignment: You should know answers to the below questions.
+
+What is Reconciliation?
+What is Virtual DOM?
+What is DIF Algorithm?
+
+->Why `export 'default' FuctionalComponentName`?
+	-> Why `default` word?
+	-> What are the other ways to export the file.
+
+-> There are two ways to export any React Functional Component, they are:
+	
+	1. Exporting by Name.
+		e.g., `export const Title = ({...props}) => {
+					return(
+						<Logo />
+					);
+				};`
+	2. Exporting by Default
+		e.g., `const Header = () => {
+					return(
+						<>
+							<Title />
+							<NavBar />
+						</>
+					);
+				};
+				export default Header;`

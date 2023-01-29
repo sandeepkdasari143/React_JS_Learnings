@@ -3,11 +3,11 @@
 2. Dependencies
 
 	Example: "devDependencies": {"parcel": "^2.8.2", "process": "^0.11.10"},
-			  "dependencies": {"react": "^18.2.0", "react-dom": "^18.2.0"}
+			"dependencies": {"react": "^18.2.0", "react-dom": "^18.2.0"}
 
 ->What is Browser List? 
 Ans: Helps us to Transform our code and make our code compatible for different types of Browsers.
-		Example:  "browserlist":["last 10 Chrome versions", "last 10 Firefox versions"]
+	Example:  "browserlist":["last 10 Chrome versions", "last 10 Firefox versions"]
 
 -> What is Polyfill?
 Ans: Some code which is the replacement for the newer version of the code.
