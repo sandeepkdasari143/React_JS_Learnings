@@ -1,0 +1,7 @@
+There are two layers in the React Application:
+1=> UI Layer
+2=> Data Layer (handled by the State and Prop)
+
+->When we have a react application, there is a UI Layer (Buttons, Divs), (The Client)
+->Data is handled by "State" and "Props"
+->Prop can be passed from one component to another component.
