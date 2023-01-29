@@ -8,15 +8,18 @@ What is DIF Algorithm?
 	-> Why `default` word?
 	-> What are the other ways to export the file.
 
--> There are two ways to export any React Functional Component, they are:
+-> There are two ways to export and import any React Functional Component, they are:
 	
-	1. Exporting by Name.
+	1. Exporting & Importing by Name.
 		e.g., `export const Title = ({...props}) => {
 					return(
 						<Logo />
 					);
 				};`
-	2. Exporting by Default
+
+		-> Named Import is looks like => `import {Title} form './components/Header';`
+
+	2. Exporting & Importing by Default
 		e.g., `const Header = () => {
 					return(
 						<>
@@ -26,3 +29,7 @@ What is DIF Algorithm?
 					);
 				};
 				export default Header;`
+
+		-> Default Import is looks like => `import Header form './components/Header';`
+
+
