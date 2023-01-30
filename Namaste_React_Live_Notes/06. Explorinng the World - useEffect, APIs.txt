@@ -37,7 +37,102 @@ Ans: Virtual DOM, Reconcialation, and DIF Algorithm. => Virtual DOM is the repre
 -> useEffect() is called "after every render".
 -> when the useEffect() is written with an empty dependency array, will be called after the initial render.
 -> when dependecy array [searchText] => once after the key change.
-->  
+-> 
+->
+-> async...await 
+
+-> Do optional chaining, whenever you are acquiring/ taking the data from any public API end point JSON.
+
+-> How to write Fetch API in useEffect() and store the data into the Local state
+	Variable using Optional Chaining?
+Ans:- 
+
+`const Body = () => {
+
+	const [] = useState();
+	const [] = useState();
+	
+	useEffect(()=>{
+		getRestaurants();
+	},[]);
+
+	const getRestaurants = async() => {
+		const data = await fetch("");
+		const json = await data.json();
+		console.log(json);
+		
+		//Use Optional Chaining to do safety-check.
+		setRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+	}
+
+	reuturn(
+	<div> {restaurants.map((restaurant)=><RestaurantCard {...restaurant} key={restaurant.id}/> )} </div>
+	)'
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 
