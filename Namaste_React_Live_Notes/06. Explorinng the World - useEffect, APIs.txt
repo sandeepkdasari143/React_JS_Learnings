@@ -1,0 +1,97 @@
+-> `useState` is used to create some local variables in out application.
+-> We use local state to handle the changes in any part of the UI in react application.
+-> If we want keep the UI to sync with the data, we use a STATE Variable.
+-> Why React is FAST?
+Ans: Virtual DOM, Reconcialation, and DIF Algorithm. => Virtual DOM is the representation
+	of the real DOM.
+
+-> React can only track the "state variables"., but not normal js variables, Because React is using the 
+	virtual DOM to manipulate the UI. So, It can't be done by using the normal variables.
+-> React is keeping track with the `useState` variable.
+-> If that `useState` gets changes, the whole UI will be re -rendered and it updated the DOM and UI.
+-> It will only update the content which depends on that particular `useState` variable.
+-> It updates the required Node but re-render the whole Component.
+
+-> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+-> filter(()=>{})
+-> const [stateVariable, functionToUpdateStatevariable] = useState()
+-> useEffect(()=>{}, []) => Hook -> Function -> 2 params {Callback Function, Dependency Array}.
+
+-> The callback function ()=>{}, present in the useEffect Hook, is called whenever useEffect() wants 
+	to call it. i.e.,
+-> Whenever our compoment render, after every render, the useEffect() is called. 
+-> calling of the useEffect() can be controlled by the `second param` => "Dependency Array".
+-> useEffect() is called "after every render".
+-> when the useEffect() is written with an empty dependency array, will be called after the initial render.
+-> when dependecy array [searchText] => once after the key change.
+->  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
