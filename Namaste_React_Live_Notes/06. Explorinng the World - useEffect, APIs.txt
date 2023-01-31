@@ -11,14 +11,24 @@ Ans: Virtual DOM, Reconcialation, and DIF Algorithm. => Virtual DOM is the repre
 -> If that `useState` gets changes, the whole UI will be re -rendered and it updated the DOM and UI.
 -> It will only update the content which depends on that particular `useState` variable.
 -> It updates the required Node but re-render the whole Component.
+ 
 
+
+Home Work:
+-> Practice and explore the useEffect(()=>{},[])
+-> Explore the world of APIs, Debugger and the Logic Building
+-> Page Refresh => Component Renders -> useEffect() Called and executes some function. 
+	=> Page Re-renders => Updates the UI usinf Reconcialation and DIF Algorithm. 
+-> Make the Search Engine on your own.
+-> Handle the Loading screen and return Skeleton Loading...
+-> Early Returning the things which updates the UI.
+-> Optional Chaining in API DATA and everywhere, use the "Optional Chaining"
 -> 
-
-
-
-
-
-
+-> Read about => fetch() API
+-> Read about Microservices and Monolithic Architecture and 
+	How are the microservices get connected?
+-> CORS => Watch the Akshay Saini's CORS video in YT.
+-> 
 
 
 
@@ -70,6 +80,20 @@ Ans:-
 	)'
 
  
+
+
+
+
+-> Conditional Rendering, Filtering the List for the Search Bar for the "FoodVilla" React Application.
+-> Conditional Rendering of the UI,
+
+JAVASCRIPT EXPRESSIONS works inside the JSX, but not the JAVASCRIPT STATEMENTS:
+-> you can't run => { let a = 10; console.log(a); }
+-> Instead write the JS Expression => { (let a=10, console.log(a) ) }
+-> Basically, you can't write the `;` in any of the lines inside the JSX.
+
+-> Example: Try out implementing Conditional Rendering by taking `isLogedInUser` example
+   to conditionally render the `login` and `logout`.
 
 
 
