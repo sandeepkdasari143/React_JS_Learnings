@@ -1,3 +1,4 @@
+-> We shouldn't write useState() in "Conditionals, For...Loops"
 -> `useState()` is the hook that React gives you to create the local state variable inside your
 	Functional Component. So Never use the `useState()` outside your Functional Component.
 
@@ -71,15 +72,21 @@ Eg., `import {Link} from 'react-router-dom'
 				e.g., `const [] = useState(null);`
 
 
+-> {Array(10).fill("").map(()=>{return()})} //Creating The Fake Array to Loop through it to show Shimmer/ Skeletal Loader UI 10 Times.
 
 -> RECAP && HOMEWORK:
 
+-> We can create Multiple useEffect's...
+-> "Formik" is the Library which helps us to build Forms...
+-> Routing => Config Driven Routing, createBrowserRouter([]{})
+-> React Router DOM V6 Stuff! (Outlet, Link, Dynamic Routing(:id), Nested Routes, useParams(), useRouterError())
+-> `<RouteProvider router={} />` && `{useRouteError()}` and `errorElement: <NotFoundPage />`
+-> Wrting Small Logic Into Components, Use Functional / Modular Programming Paradigm.(Readable, Maintainable, ReUsable, and Testable).
 -> 
 -> 
--> 
--> 
--> 
--> 
+
+HOMEWORK: 
+-> Build some SignUp and LogIn pages using "Formik" Library...
 -> 
 -> 
 -> 
