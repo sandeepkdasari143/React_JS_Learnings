@@ -21,11 +21,54 @@ CLASS STARTS FROM HERE!
 
 CHAPTER: REACT-ROUTER-DOM-V6
 -> We will be Routing today, We will be creating routes for our Application.
--> 
+
+-> NOTES ABOUT REACT ROUTER DOM V6 Here!
+
+-> React Router DOM is very Powerfull, So that it catches it's routing errors and store them
+	using `useRouteError` API/ function and can be shown in custom Route Error Page: 404 Not Found Page...
+
+-> CODE:
+`import { useRouterError } form 'react-router-dom';
+
+const Error = () =>{
+  const error = useRouterError();  		// `status` && `statustext` comes from this API.
+  
+  return(
+	<div>
+	  <h1>Oops!</h1>
+	  <h1>Something went Wrong!</h1>
+	  <h2>{error.status + " : " + error.statusText}</h2>
+)}`
+
+
+-> What is the problem with anchor tag `<a href="#">Link</a>`? 
+Ans: It refreshes the whole entire page, very bad! In React, We hate Refreshing the page.
+-> We are building the "Single Page Application" (SPA) => Earlier, in olden days, The wenbise always reloads for every `anchor tag`.
+ Make Notes in depth to this Topic!
+
+-> Types of Routing : 1. Client-Side Routing && 2. Server-Side Routing.
+
+-> In React Application, We are going to build 'Client-Side Routing'.
+-> We need to create Single Page Application and we shouldn't be 'Reload the entire Application".
+
+-> Import `Link` from the 'react-router-dom' library, to replace the traditional 'anchor tag'.
+
+Eg., `import {Link} from 'react-router-dom'
+	<Link to="/home"><li>Home</li></Link>
+	<li><Link to="/about">About</Link></li>`
 
 
 
-
+-> In most of the time, In the most of the cases, We'll get an ERROR from the react application, => Read properties are not defined
+	->Because, The page generally renders before the `useEffect`is called and get the data from `API Data`.
+	->So, If there is no Data in the Local state Variable, then surely, the Error which has been mentioned
+	above will occur i.e., `Read Properties are Not Defined`.
+	-> SOLUTION FOR THIS NEVER-ENDING PROBLEM:
+	-> We can solve this problem by doing two things:
+	->They are: 1. Early Return => e.g., `if(!restaurant) return <Shimmer /> || <Skeleton />` 
+				(OR) Use "Conditional Rendering" of the Component while "RETURNING" using "Ternary Operator (`?:`)".
+			 2. Use the value `null` in the state variable to avoid this kind of Errors.
+				e.g., `const [] = useState(null);`
 
 
 
