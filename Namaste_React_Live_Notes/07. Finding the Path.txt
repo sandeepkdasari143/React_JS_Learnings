@@ -1,0 +1,111 @@
+-> `useState()` is the hook that React gives you to create the local state variable inside your
+	Functional Component. So Never use the `useState()` outside your Functional Component.
+
+-> Always create the `useState()` inside your Functional Component.
+
+-> Can I use more than one `useEffect()`s?  Ans=> Yes, you can :)
+
+-> How do I import in my Component?
+Ans=> Create `assets` and in that, You can put folder `images`.
+	-> How would we use that Image, in our components?
+	-> `import Logo from "../assets/images/foodvilla.png";
+	-> `<img src={Logo} alt="" />`
+-> CDN is the greate place to store and use the Images in the Development World.
+-> "Read about CDN"
+
+
+CLASS STARTS FROM HERE!
+-> Create and Design your own 'Shimmer UI'!
+-> Why do we need "key" prop in React? Do Research!
+-> Use `formik` NPM Library to handle the Forms.
+
+CHAPTER: REACT-ROUTER-DOM-V6
+-> We will be Routing today, We will be creating routes for our Application.
+-> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
